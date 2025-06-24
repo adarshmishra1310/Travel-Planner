@@ -1,0 +1,10 @@
+^C:\USERS\MISHR\ONEDRIVE\DOCUMENTS\CDC\PROJECTS\TRAVEL_PLANNER\CPP\BUILD\CMAKEFILES\295A3924A920042DB97079623C1AA942\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/mishr/OneDrive/Documents/CDC/Projects/travel_planner/cpp -BC:/Users/mishr/OneDrive/Documents/CDC/Projects/travel_planner/cpp/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/mishr/OneDrive/Documents/CDC/Projects/travel_planner/cpp/build/tsp.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
